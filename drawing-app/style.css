@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+* {
+    box-sizing: border-box;
+    transition: all 100ms ease-in-out;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6, span, p {
+    margin: 0;
+    line-height: 1;
+    color: #ffffff;
+}
+
+button {
+    cursor: pointer;
+}
+
+.app {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.app .canvas {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    backdrop-filter: opacity(60%);
+}
+
+.app .toolbox {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    background-color: transparent;
+    padding: 20px;
+    margin: 0;
+}
+
+.toolbox .tool {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 40px;
+    color: #333;
+    border-radius: 4px;
+    text-align: center;
+    min-height: 50px;
+    background-color: #ffffff;
+    margin-right: 15px;
+}
+
+.toolbox button {
+    font-size: 2rem;
+    border: none;
+    width: 100%;
+    height: 50px;
+    border-radius: 4px;
+}
+
+.toolbox button:active {
+    transform: scale(0.9);
+}
+
+.toolbox span {
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+.toolbox .color-picker {
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+    border: none;
+}

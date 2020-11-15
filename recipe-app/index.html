@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <div id="modile-container" class="mobile-container">
+        <header class="header">
+            <form class="search-recipe">
+                <input class="search-recipe-input" id="search-recipe-input" type="text" placeholder="Find recipe...">
+                <button class="search-recipe-btn" id="search-recipe-btn">
+                    <i class="fa fa-search"></i>
+                </button>
+            </form>
+        </header>
+        <div class="fav-container">
+            <ul class="fav-meals" id="fav-meals">
+            </ul>
+        </div>
+        <div class="meals" id="meals">
+        </div>
+    </div>
+
+    <div id="meal-recipe-info" class="recipe-container hidden">
+        <div class="recipe-info">
+            <button id="close-recipe-popup" class="close-recipe-popup">
+                <i class="fa fa-times i-close-recipe"></i>
+            </button>
+            <div id="recipe-content" class="recipe-content">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

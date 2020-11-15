@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing App</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <div class="app">
+        <canvas class="canvas" id="canvas" width="500" height="500">
+        </canvas>
+        <ul class="toolbox" id="tollbox">
+            <li class="tool">
+                <button class="increase" id="increase">-</button>
+            </li>
+            <li class="tool">
+                <span id="size">30</span>
+            </li>
+            <li class="tool">
+                <button class="decrease" id="decrease">+</button>
+            </li>
+            <li class="tool">
+                <input class="color-picker" type="color" id="color-picker">
+            </li>
+            <li class="tool">
+                <button class="clear" id="clear">&#128465;</button>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
